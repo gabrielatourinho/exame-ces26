@@ -1,0 +1,8 @@
+<h2>Kids</h2>
+<ul class="kids">
+  <li *ngFor="let kid of kids">
+  	<a routerLink="/detail/{{kid.id}}">
+      <span class="badge">{{kid.id}}</span> {{kid.name}}
+    </a>
+  </li>
+</ul>

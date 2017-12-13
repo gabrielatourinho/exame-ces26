@@ -1,0 +1,14 @@
+<div *ngIf="kid">
+
+  <h2>{{ kid.name | uppercase }} is getting a {{kid.gift }}</h2>
+  <div><span>id: </span>{{kid.id}}</div>
+  <div><span>name: </span>{{kid.name}}</div>
+  <div><span>Is nice? </span>{{kid.isNice}}</div>
+  <div>
+    <label>gift:
+      <input [(ngModel)]="kid.gift" placeholder="gift">
+    </label>
+  </div>
+</div>
+
+<button (click)="goBack()">go back</button>
